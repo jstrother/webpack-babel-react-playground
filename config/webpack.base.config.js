@@ -30,6 +30,10 @@ module.exports = env => {
 				new HtmlWebpackPlugin({
 					template: './src/index.html',
 					filename: './index.html'
+				}),
+				new webpack.DefinePlugin({
+					'process.env.VERSION': JSON.stringify(env.VERSION),
+					'process.env.PLATFORM': JSON.stringify(env.PLATFORM)
 				})
 			]
 		}
