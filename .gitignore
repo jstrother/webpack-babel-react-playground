@@ -1,0 +1,8 @@
+node_modules/
+.vscode/
+coverage/
+*.log
+*.zip
+*.map
+*.env
+package-lock.json
